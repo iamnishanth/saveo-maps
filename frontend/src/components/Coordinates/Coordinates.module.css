@@ -1,0 +1,62 @@
+.coordinates {
+  height: 100%;
+  width: 45%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f2faff;
+  overflow: auto;
+}
+
+.coordinatesTitle {
+  color: #123043;
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+
+.coordinatesTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.coordinatesTableItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.coordinatesTableItem > p {
+  color: #123043;
+}
+
+.coordinatesTableRight {
+  display: flex;
+  gap: 40px;
+}
+
+.coordinatesBtn {
+  height: 42px;
+  background-color: #074770;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 21px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.coordinatesBtn:disabled {
+  background-color: #c6d1d9;
+  color: #838a8f;
+  cursor: auto;
+}
+
+@media (max-width: 992px) {
+  .coordinates {
+    min-height: 300px;
+    height: auto;
+    width: 100%;
+  }
+}
